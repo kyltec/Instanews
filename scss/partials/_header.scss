@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 50px;
+}
+
+div.logo img {
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin: 20px;
+}
+
+select {
+  color: blue;
+  background-color: gray;
+}

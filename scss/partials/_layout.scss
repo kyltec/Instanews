@@ -1,7 +1,39 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-size: $font-size-std;
+  font-family: $font-family-std;
+  color: #ffffff;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+footer {
+  display: flex;
+  color: #c2c2c2;
+  justify-content: center;
+  align-items: baseline;
+
+  @include desktop {
+    justify-content: flex-start;
+    margin-left: 5%;
+  }
+}
+
+footer p {
+  justify-content: flex-start;
 }
