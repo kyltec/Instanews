@@ -1,0 +1,10 @@
+body {
+  font-size: $font-size-std;
+  font-family: opensans-light;
+  color: #ffffff;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
