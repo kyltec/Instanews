@@ -21,18 +21,37 @@ $(document).ready(function() {
     $.ajax({
       method: "GET",
       url: url
-    }).done(function(data) {
-      $(".cashe").empty();
-      console.log(data);
-
-      $.each(data.results, function(key, value) {
-        $(".cashe")
-          .append("<p>" + value.abstract + "</p>")
-          .append("<img src=" + value.multimedia[4].url + ">");
-      }).fail(function() {
+    })
+      .done(function(data) {
         $(".cashe").empty();
-        $(".cashe").append("<p> Sorry please try again");
+        console.log(data);
+
+        // const sift = data.results.filter(multimedia.length[5]);
+
+        let sift = data.results.filter(function(value) {
+          return value.multimedia.length;
+        });
+        const slicedArray = data.results.slice(0, 12);
+
+        $.each(slicedArray, function(key, value) {
+          console.log("ran");
+          $(".cashe").append(
+            `<a href="${value.url}">
+            <div class="article" style=" 
+                  background:url(${
+                    value.multimedia[4].url
+                  });background-size:cover; display:flex";
+                  >
+            <p style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))">${
+              value.abstract
+            }</p>
+            </div></a>`
+          );
+        });
+      })
+      .fail(function() {
+        $(".cashe").empty();
+        $(".cashe").append("<p> Sorry please try again</p>");
       });
-    });
   });
 });

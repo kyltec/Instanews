@@ -24,13 +24,37 @@ body {
 
 .cashe {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.article {
+  width: 100%;
 
   @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 50vw;
   }
+  @include desktop {
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  @include tablet {
+    width: 50%;
+    // height: 50vw;
+  }
+
+  @include desktop {
+    width: 25%;
+  }
+}
+
+p {
+  text-align: bottom;
 }
 
 footer {
