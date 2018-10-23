@@ -36,6 +36,7 @@ h2 {
   text-align: center;
   display: inline-block;
   margin: 10px;
+  width: 200px;
 }
 
 .option {
@@ -52,8 +53,6 @@ h2 {
 }
 
 select {
-  color: blue;
-  background-color: rgb(221, 167, 167);
   align-items: center;
   &:focus {
     outline: 0;

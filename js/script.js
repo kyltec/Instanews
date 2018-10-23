@@ -1,5 +1,6 @@
 $(document).ready(function() {
   // js code
+  $("select").selectric();
 
   $("#category").on("change", function(event) {
     event.preventDefault;

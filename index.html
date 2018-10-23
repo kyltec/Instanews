@@ -7,9 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Instanews</title>
   <!-- My Style, note you can use style.min.css for Production -->
+  <link rel="stylesheet" href="./build/css/selectric.css">
   <link rel="stylesheet" href="./build/css/style.min.css">
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
   <!-- My Script -->
   <script src="./build/js/script.min.js"></script>
 </head>
@@ -20,7 +22,7 @@
     <div class="option">
       <h2>Choose a Section...</h2>
       <div class="dropdown">
-        <select id="category">
+        <select id="category" class="selectric">
           <option value="select">Select...</option>
           <option value="books">Books</option>
           <option value="arts">Arts</option>
