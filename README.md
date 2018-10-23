@@ -6,4 +6,6 @@ text
 
 **Built With**
 
+HTML - used as the framework of the website
+
 **Author**

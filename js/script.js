@@ -10,12 +10,13 @@ $(document).ready(function() {
       $.param({
         "api-key": "1a105db8955341c29606cfcfb8c3c1b2"
       });
-    console.log(selected);
-    $(".loading").show();
+
+    $(".loading").append("<img src='../../images/ajax-loader.gif'>");
     $(".cashe").css("display", "flex");
     $("header").addClass("nav");
     $("header").removeClass("flex-container");
     $("img").addClass("logo");
+
     $.ajax({
       method: "GET",
       url: url
@@ -24,12 +25,10 @@ $(document).ready(function() {
         $(".cashe").empty();
         console.log(data);
 
-        // const sift = data.results.filter(multimedia.length[5]);
-
         let sift = data.results.filter(function(value) {
           return value.multimedia.length;
         });
-        const slicedArray = data.results.slice(0, 12);
+        const slicedArray = sift.slice(0, 12);
 
         $.each(slicedArray, function(key, value) {
           console.log("ran");
@@ -43,9 +42,13 @@ $(document).ready(function() {
             <p>${value.abstract}</p>
             </div></a>`
           );
-          $(".loading").hide();
         });
       })
+
+      .always(function() {
+        $("div").removeClass(".loading");
+      })
+
       .fail(function() {
         $(".cashe").empty();
         $(".cashe").append("<p> Sorry please try again</p>");
