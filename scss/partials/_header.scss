@@ -1,16 +1,29 @@
-.logo {
+nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 50px;
+  justify-content: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
-div.logo img {
-  height: 250px;
-  justify-content: center;
-  align-items: center;
+.logo {
+  height: 170px;
+  margin: auto;
+  @include tablet {
+    margin: 0;
+    height: 100px;
+    padding-left: 100px;
+  }
+  @include desktop {
+    padding-left: 20px;
+  }
 }
 
 h2 {
@@ -33,6 +46,10 @@ h2 {
   text-align: center;
   align-content: center;
   margin: 20px;
+  @include tablet {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 select {
