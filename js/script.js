@@ -12,7 +12,7 @@ $(document).ready(function() {
         "api-key": "1a105db8955341c29606cfcfb8c3c1b2"
       });
 
-    $(".loading").append("<img src='../../images/ajax-loader.gif'>");
+    $(".loading").append("<img src='./images/ajax-loader.gif'>");
     $(".cashe").css("display", "flex");
     $("header").addClass("nav");
     $("header").removeClass("flex-container");
