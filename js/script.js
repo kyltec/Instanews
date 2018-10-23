@@ -19,7 +19,8 @@ $(document).ready(function() {
 
     $.ajax({
       method: "GET",
-      url: url
+      url: url,
+      dataType: "JSON"
     })
       .done(function(data) {
         $(".cashe").empty();
