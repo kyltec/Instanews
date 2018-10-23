@@ -11,10 +11,10 @@ $(document).ready(function() {
         "api-key": "1a105db8955341c29606cfcfb8c3c1b2"
       });
     console.log(selected);
-
+    $(".loading").show();
     $(".cashe").css("display", "flex");
-    $("header div:first-child").removeClass("flex-container");
-    $("header div:first-child").addClass("nav");
+    $("header").addClass("nav");
+    $("header").removeClass("flex-container");
     $("img").addClass("logo");
     $.ajax({
       method: "GET",
@@ -43,6 +43,7 @@ $(document).ready(function() {
             <p>${value.abstract}</p>
             </div></a>`
           );
+          $(".loading").hide();
         });
       })
       .fail(function() {

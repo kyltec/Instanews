@@ -1,15 +1,14 @@
-nav {
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
     justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
   }
 }
 
