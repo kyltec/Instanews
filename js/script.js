@@ -49,17 +49,16 @@ function getStories(selected) {
     });
     const slicedArray = sift.slice(0, 12);
 
-    $.each(slicedArray, function(key, value) {
+    for (let value of slicedArray) {
+      const { url, multimedia, abstract } = value;
       $(".cashe").append(
-        `<a href="${value.url}">
+        `<a href="${url}">
             <div class="article" style=" 
-                  background:url(${
-                    value.multimedia[4].url
-                  });background-size:cover;"
+                  background:url(${multimedia[4].url});background-size:cover;"
                   >
-            <p>${value.abstract}</p>
+            <p>${abstract}</p>
             </div></a>`
       );
-    });
+    }
   });
 }
