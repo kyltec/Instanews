@@ -4,8 +4,6 @@
 
 This website grabs new stories from the New York Times and displays them based on which category is selected. The site is also fit for use on mobile, tablet, and desktop.
 
-## Screenshots
-
 ## Desktop
 
 <img src="./screenshots/desktop-home.png" alt="Desktop Home Page" width="800px" height="500px">
