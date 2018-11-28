@@ -6,18 +6,18 @@ This website grabs new stories from the New York Times and displays them based o
 
 ## Desktop
 
-<img src="./screenshots/desktop-home.png" alt="Desktop Home Page" width="800px" height="500px">
-<img src="./screenshots/desktop-content.png" alt="Desktop content" width="800px" height="500px">
+<img src="./screenshots/desktop-home.png" alt="Desktop Home Page" width="600px" height="300px">
+<img src="./screenshots/desktop-content.png" alt="Desktop content" width="600px" height="300px">
 
 ## Tablet
 
-<img src="./screenshots/tablet-home.png" alt="Tablet Home Page" width="600px" height="600ox">
-<img src="./screenshots/tablet-content.png" alt="Tablet content" width="600px" height="600px>
+<img src="./screenshots/tablet-home.png" alt="Tablet Home Page" width="300px" height="300ox">
+<img src="./screenshots/tablet-content.png" alt="Tablet content" width="300px" height="300px>
 
 ## Mobile
 
-<img src="./screenshots/mobile-home.png" alt="Mobile Home Page" width="400px" height="800px">
-<img src="./screenshots/mobile-content.png" alt="Mobile content" width="400px" height="800px">
+<img src="./screenshots/mobile-home.png" alt="Mobile Home Page" width="200px" height="400px">
+<img src="./screenshots/mobile-content.png" alt="Mobile content" width="200px" height="400px">
 
 **Built With**
 
