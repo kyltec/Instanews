@@ -12,11 +12,12 @@ This website grabs new stories from the New York Times and displays them based o
 ## Tablet
 
 <img src="./screenshots/tablet-home.png" alt="Tablet Home Page" width="300px" height="300ox">
-<img src="./screenshots/tablet-content.png" alt="Tablet content" width="300px" height="300px>
+<img src="./screenshots/tablet-content.png" alt="Tablet content" width="300px" height="300px">
 
 ## Mobile
 
 <img src="./screenshots/mobile-home.png" alt="Mobile Home Page" width="200px" height="400px">
+<img src="./screenshots/mobile-content.png" alt="Mobile content" width="200px" height="400px">
 
 **Built With**
 
