@@ -17,7 +17,6 @@ This website grabs new stories from the New York Times and displays them based o
 ## Mobile
 
 <img src="./screenshots/mobile-home.png" alt="Mobile Home Page" width="200px" height="400px">
-<img src="./screenshots/mobile-content.png" alt="Mobile content" width="200px" height="400px">
 
 **Built With**
 
